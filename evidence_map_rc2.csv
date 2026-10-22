@@ -1,0 +1,20 @@
+Evidence ID,Claim,Numerator / denominator,Local source,Supported scope,Still required
+E01,Study A initial agreement,20/20 Development problems,development_pilot_full_results_cn.md,Engineering feasibility; not population accuracy,Independent Gold review
+E02,Study A natural FCR,0/0; undefined,development_pilot_full_results_cn.md,No natural error opportunity,Clean natural-error sample
+E03,Study A executor agreement,60/60 executor outputs vs project Gold,development_pilot_full_results_cn.md,Specification-relative arithmetic,Source/spec semantic review
+E04,Study B structure,40 cases / 15 clusters; 9 eligible FCR clusters,posthoc_cluster_stats_v2.md,Fixed Development challenge set,Confirmatory independent sample
+E05,Study B Base FCR,13/17 = 76.47%,development_probe_v2_formal_review_cn.md,Gold-referenced Study B controlled condition; case-weighted controlled opportunities,Natural error prevalence
+E06,Study B Audit FCR,1/17 = 5.88%,development_probe_v2_formal_review_cn.md,Gold-referenced Study B controlled condition; same paired controlled opportunities,Deployment reliability
+E07,Cluster-weighted FCR,71.85% vs 2.22%,posthoc_cluster_stats_v2.md,Gold-referenced Study B controlled condition; post-hoc equal-cluster sensitivity,Confirmatory population inference
+E08,LOCO direction,15/15 deletions retain Base > Audit,posthoc_cluster_stats_v2.md,Gold-referenced Study B controlled condition; post-hoc robustness to one cluster,Effect magnitude precision
+E09,Cluster bootstrap,Exploratory percentile ranges,posthoc_cluster_stats_v2.md,Gold-referenced Study B controlled condition; observed-cluster sensitivity,Population confidence interval
+E10,Audit coverage,17/40 = 13 certifications + 4 refutations,development_probe_v2_formal_review_cn.md,Gold-referenced Study B controlled condition; controlled decisions,Operational utility
+E11,Withholding,23/40,development_probe_v2_formal_review_cn.md,Gold-referenced Study B controlled condition; controlled selectivity cost,Human escalation cost
+E12,Common-mode residual,1 audit FC; shared-error miss 2/4,development_probe_v2_formal_review_cn.md,Gold-referenced Study B controlled condition; constructed residual mechanism,Natural frequency
+E13,Study C original agreement,9/10 automatic,v2_1_author_review_results_cn.md,Author/provenance audit,Independent validation
+E14,Study C post-Gold agreement,10/10 incl. one same-author adjudication,v2_1_author_review_results_cn.md,Operational resolution,Blind evidence
+E15,Independent human review,0 records,v2_1_author_review_results_cn.md,Explicit evidence gap,None
+E16,Held-out status,HIGH_UNRESOLVED; no credible result,heldout_contamination_protocol_cn.md,Blocks generalization claim,Clean confirmatory set
+E17,Evidence integrity,Local hash/ledger/seal checks,development_probe_v2_integrity_amendment_cn.md,Local consistency,External timestamp/non-repudiation
+E18,Literature scope,17 locally registered references,related_work_review_cn.md,Targeted scoping review,Systematic coverage/human sign-off
+E19,Study B Secondary provenance,Gold-derived in non-shared-error cases,probe_v2.py and development_probe_v2_prereg_cn.md,Reference-backed controlled audit construction,Independent translator evaluation on natural errors

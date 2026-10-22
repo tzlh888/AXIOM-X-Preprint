@@ -1,0 +1,16 @@
+cluster_token,case_count,wrong_count,base_fc_count,audit_fc_count,covered_count,positive_count,refutation_count,withholding_count
+CLUSTER-01,6,5,4,1,2,1,1,4
+CLUSTER-02,1,1,1,0,0,0,0,1
+CLUSTER-03,2,1,0,0,1,0,1,1
+CLUSTER-04,2,0,0,0,1,1,0,1
+CLUSTER-05,4,0,0,0,2,2,0,2
+CLUSTER-06,3,2,2,0,1,1,0,2
+CLUSTER-07,2,1,1,0,1,1,0,1
+CLUSTER-08,2,1,1,0,1,1,0,1
+CLUSTER-09,4,2,2,0,2,2,0,2
+CLUSTER-10,1,0,0,0,0,0,0,1
+CLUSTER-11,4,3,2,0,2,1,1,2
+CLUSTER-12,3,0,0,0,1,1,0,2
+CLUSTER-13,1,1,0,0,1,0,1,0
+CLUSTER-14,4,0,0,0,1,1,0,3
+CLUSTER-15,1,0,0,0,1,1,0,0
