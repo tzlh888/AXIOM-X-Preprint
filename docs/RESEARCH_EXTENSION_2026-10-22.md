@@ -71,6 +71,25 @@ python code/rc_stats.py --clusters data/cluster_summary.csv
 | natural LLM reliability | no natural experiment run | NOT RUN |
 | external or human Gold validity | no independent reviewer/data | NOT VERIFIED |
 
+## Execution record
+
+Executed locally on 2026-10-22 from the clean baseline and again from a fresh
+temporary clone of branch `research-upgrade-20261022`:
+
+- `python3 code/rc_stats.py --clusters data/cluster_summary.csv`: VERIFIED;
+  preserved 40 cases, 17 wrong-answer opportunities, 13 Base false
+  certifications, 1 audit false certification, and 17/40 decision coverage.
+- `python -m pytest -q`: VERIFIED, `12 passed`.
+- `python -m axiom_x.demo`: VERIFIED; deterministic synthetic output contained
+  one `DEFINED_CHECKS_PASSED` and one counterexample-backed
+  `SPECIFICATION_SET_DIFFERENCE`.
+- Fresh-clone rerun: VERIFIED, `12 passed`; historical recomputation and demo
+  also completed. Temporary outputs were not committed as research results.
+
+The real-provider experiment, new natural dataset evaluation, and independent
+human Gold review were NOT RUN because no credentials, approved unseen data,
+or independent reviewer evidence was supplied.
+
 ## Failure analysis and limits
 
 - Shared semantic omissions can pass dual formalization; a deterministic test
