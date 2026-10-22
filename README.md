@@ -53,6 +53,22 @@ python3 code/rc_stats.py --clusters data/cluster_summary.csv
 
 The included CSV files contain only public aggregate/case-level derived material. They do not contain private questions, Gold answers, model responses, reviewer identities, or private ledgers. See [REPRODUCIBILITY.md](REPRODUCIBILITY.md), [METHOD.md](METHOD.md), [LIMITATIONS.md](LIMITATIONS.md), and [manifest_sha256.txt](manifest_sha256.txt).
 
+## 2026 executable audit extension
+
+A separate, AI-assisted extension now provides a bounded formal-specification
+schema, deterministic Python and Z3 solvers, solution-set counterexamples,
+isolated fixture/optional real-provider interfaces, Gold-frozen evaluation,
+cluster bootstrap, and synthetic mechanism tests. It is not a rerun of Studies
+A/B/C and does not change their frozen findings. See
+[the extension method and evidence boundary](docs/RESEARCH_EXTENSION_2026-10-22.md).
+
+```bash
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r requirements-extension.txt
+pytest -q
+python -m axiom_x.demo
+```
+
 ## Research integrity and AI disclosure
 
 ChatGPT and other AI tools assisted with code, analysis, field interpretation, and writing. The author retains responsibility for all claims and release decisions. The structured author-review ledger did not record all wording/field-guidance assistance; this is disclosed at report level and was not retroactively inserted into frozen evidence. See [DISCLOSURE.md](DISCLOSURE.md) and [PROVENANCE.md](PROVENANCE.md).
